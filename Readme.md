@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Влад Богодяж](https://up.htmlacademy.ru/adaptive/24/user/1351381).
-* Наставник: [Семён Якушев](https://htmlacademy.ru/profile/id1118791).
+* Наставник: [Семён Якушев](https://htmlacademy.ru/profile/id1118791)
 
 ---
 
