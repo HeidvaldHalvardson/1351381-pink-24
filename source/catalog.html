@@ -7,7 +7,7 @@
   <body class="page__body">
     <header class="page-header">
       <div class="header-wrapper">
-        <a class="page-header__logo" href="#" aria-label="Логотип Pink.">
+        <a class="page-header__logo" href="index.html" aria-label="Логотип Pink.">
           <svg width="74" height="23" viewBox="0 0 74 23" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg">
             <path d="M0.00496827 1.54857C0.00487772 1.21254 0.135804 0.889818 0.369742 0.649431C0.60368 0.409043 0.922049 0.27008 1.25676 0.262266H8.39001C13.4469 0.262266 16.7751 2.9645 16.7751 7.39179V7.45162C16.7751 12.2977 12.7415 14.8105 7.97274 14.8105H2.53836V21.611C2.55394 21.7874 2.53277 21.9651 2.47619 22.1329C2.41961 22.3006 2.32887 22.4547 2.20973 22.5854C2.09058 22.716 1.94565 22.8204 1.78416 22.8918C1.62266 22.9631 1.44812 23 1.27166 23C1.0952 23 0.920671 22.9631 0.759173 22.8918C0.597674 22.8204 0.452744 22.716 0.333602 22.5854C0.21446 22.4547 0.123708 22.3006 0.0671295 22.1329C0.0105515 21.9651 -0.0106138 21.7874 0.00496827 21.611V1.54857ZM8.07209 12.5171C11.7778 12.5171 14.2119 10.5228 14.2119 7.53139V7.47156C14.2119 4.26078 11.8175 2.59556 8.25092 2.59556H2.58804V12.4772L8.07209 12.5171Z"/>
             <path d="M21.5935 1.38904C21.5779 1.21262 21.5991 1.03487 21.6556 0.867114C21.7122 0.699353 21.803 0.545245 21.9221 0.414596C22.0412 0.283947 22.1862 0.179616 22.3477 0.108238C22.5092 0.0368607 22.6837 0 22.8602 0C23.0366 0 23.2112 0.0368607 23.3727 0.108238C23.5342 0.179616 23.6791 0.283947 23.7982 0.414596C23.9174 0.545245 24.0081 0.699353 24.0647 0.867114C24.1213 1.03487 24.1425 1.21262 24.1269 1.38904V21.611C24.1425 21.7874 24.1213 21.9651 24.0647 22.1329C24.0081 22.3006 23.9174 22.4548 23.7982 22.5854C23.6791 22.7161 23.5342 22.8204 23.3727 22.8918C23.2112 22.9631 23.0366 23 22.8602 23C22.6837 23 22.5092 22.9631 22.3477 22.8918C22.1862 22.8204 22.0412 22.7161 21.9221 22.5854C21.803 22.4548 21.7122 22.3006 21.6556 22.1329C21.5991 21.9651 21.5779 21.7874 21.5935 21.611V1.38904Z"/>
@@ -19,10 +19,10 @@
           <button class="main-nav__toogle"><span class="visually-hidden">Открыть меню навигации</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Фотографии</a>
+              <a href="#">Фотографии</a>
             </li>
             <li class="main-nav__item">
               <a href="form.html">Конкурс</a>
@@ -34,103 +34,112 @@
         </nav>
       </div>
     </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Приложение Pink - надень розовые очки!</h1>
-      <section class="downloads">
-        <div class="dowloads__wrapper">
-          <h2 class="downloads__title index-title">Взгляните на жизнь иначе!</h2>
-          <a class="downloads__button" href="#">Скачать приложение</a>
-          <small class="downloads__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
-        </div>
+    <main class="page-catalog">
+      <div class="inner-page-title">
+        <h1 class="inner-page-title__text">Фотографии пользователей</h1>
+      </div>
+      <section class="catalog">
+        <h2 class="catalog__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <img class="catalog__img" width="320" height="137" src="img/catalog-item/panorama-mobile.jpg" alt="">
+            <cite class="catalog__autor">Анна</cite>
+            <span class="catalog__time">(5 минут назад)</span>
+            <p class="catalog__text">Прыгать или нет? Напишите в комментарии свой совет и
+              смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="catalog__likes">Нравится:<span class="catalog__likes-number">215</span></p>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__img" width="280" height="180" src="img/catalog-item/photo-1-mobile.jpg" alt="">
+            <cite class="catalog__autor">Левон</cite>
+            <span class="catalog__time">(5 часов назад)</span>
+            <p class="catalog__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="catalog__likes">Нравится:<span class="catalog__likes-number">356</span></p>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__img" width="280" height="180" src="img/catalog-item/photo-2-mobile.jpg" alt="">
+            <cite class="catalog__autor">Антон</cite>
+            <span class="catalog__time">(12 часов назад)</span>
+            <p class="catalog__text">Соседи будут рады!</p>
+            <p class="catalog__likes">Нравится:<span class="catalog__likes-number">666</span></p>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__img" width="280" height="180" src="img/catalog-item/photo-3-mobile.jpg" alt="">
+            <cite class="catalog__autor">Борис</cite>
+            <span class="catalog__time">(20 часов назад)</span>
+            <p class="catalog__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="catalog__likes">Нравится:<span class="catalog__likes-number">215</span></p>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__img" width="280" height="180" src="img/catalog-item/photo-4-mobile.jpg" alt="">
+            <cite class="catalog__autor">Сергей</cite>
+            <span class="catalog__time">(25 часов назад)</span>
+            <p class="catalog__text">Самая кубанская в мире!</p>
+            <p class="catalog__likes">Нравится:<span class="catalog__likes-number">4</span></p>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__img" width="280" height="180" src="img/catalog-item/photo-5-mobile.jpg" alt="">
+            <cite class="catalog__autor">Максим</cite>
+            <span class="catalog__time">(40 часов назад)</span>
+            <p class="catalog__text">Где снег-то?</p>
+            <p class="catalog__likes">Нравится:<span class="catalog__likes-number">150</span></p>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__img" width="280" height="180" src="img/catalog-item/photo-6-mobile.jpg" alt="">
+            <cite class="catalog__autor">Надежда</cite>
+            <span class="catalog__time">(45 часов назад)</span>
+            <p class="catalog__text">Всем GM и взаимные лайки!</p>
+            <p class="catalog__likes">Нравится:<span class="catalog__likes-number">2560</span></p>
+          </li>
+        </ul>
       </section>
-      <section class="suggests">
-        <h2 class="visually-hidden">Наши предложения</h2>
-        <div class="suggests__wrapper">
-          <p class="suggests__head-title">Устали от серости мегаполиса?</p>
-          <p class="suggests__head-title">Нам есть, что вам предложить!</p>
-          <ul class="suggests__list">
-            <li class="suggests__item">
-              <h3 class="suggests__title">Поднимает настроение</h3>
-              <p class="suggests__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="suggests__item">
-              <h3 class="suggests__title">Меняет мир вокруг</h3>
-              <p class="suggests__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="suggests__item">
-              <h3 class="suggests__title">Заводит новых друзей</h3>
-              <p class="suggests__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="review slider">
-        <h2 class="visually-hidden">Отзывы о нас</h2>
-        <div class="review__wrapper">
-          <div class="review__list slider__list">
-            <blockquote class="review__item slider__item">
-              <cite class="review__author-name">Николай Петров</cite>
-              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
+      <section class="post">
+        <h2 class="post__title">Затмите их всех!<br>
+          Выкладывайте все, что накопилось в телефоне!</h2>
+        <form class="post__form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="post__download">
+            <input class="visually-hidden" type="file">
+            <img src="img/catalog-item/photo-link-mobile.jpg" width="280" height="374" alt="Загрузить фото.">
+          </label>
+          <div class="post__range">
+            <div class="post__toggle">
+              <div class="post__toogle-type">
+                <span class="visually-hidden">Кадрирование</span>
+                <svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z"/>
+                </svg>
+              </div>
+              <div class="post__toogle-line">
+              </div>
+            </div>
+            <div class="post__toggle">
+              <div class="post__toogle-type">
+                <span class="visually-hidden">Заливка</span>
+                <svg width="48" height="43" viewBox="0 0 48 43" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.12 17.88L15.24 0L12.41 2.83L17.17 7.59L6.88 17.88C6.3182 18.4425 6.00264 19.205 6.00264 20C6.00264 20.795 6.3182 21.5575 6.88 22.12L17.88 33.12C18.4425 33.6818 19.205 33.9974 20 33.9974C20.795 33.9974 21.5575 33.6818 22.12 33.12L33.12 22.12C33.6818 21.5575 33.9974 20.795 33.9974 20C33.9974 19.205 33.6818 18.4425 33.12 17.88ZM10.41 20L20 10.42L29.59 20H10.41ZM38 23C38 23 34 27.33 34 30C34 31.0609 34.4214 32.0783 35.1716 32.8284C35.9217 33.5786 36.9391 34 38 34C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30C42 27.33 38 23 38 23Z"/>
+                  <path d="M48 40H0V43H48V40Z"/>
+                </svg>
+              </div>
+              <div class="post__toogle-line">
+              </div>
+            </div>
+            <div class="post__toggle">
+              <div class="post__toogle-type">
+                <span class="visually-hidden">Контраст</span>
+                <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z"/>
+                  <path d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29"/>
+                </svg>
+              </div>
+              <div class="post__toogle-line">
+              </div>
+            </div>
           </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
-        </div>
-      </section>
-      <section class="tariffs slider">
-        <h2 class="visually-hidden">Тарифы приложения</h2>
-        <table class="tariffs__table slider__list">
-          <thead class="tariffs__item slider__item">
-            <tr class="tariffs__item-row">
-              <td></td>
-              <td class="tariffs__item-cell tariffs__item-cell--hit">
-                <p class="tariffs__name">СТАНДАРТ</p>
-                <span class="tariffs__cost">3,99 USD</span>
-              </td>
-            </tr>
-          </thead>
-          <tr class="tariffs__options">
-            <th class="tariffs__options-name">Розовый фильтр</th>
-            <td class="tariffs__option-value slider__item"><span class="tariffs__option-name-value">Розовый фильтр</span></td>
-          </tr>
-          <tr class="tariffs__options">
-            <th class="tariffs__options-name">Смайлики</th>
-            <td class="tariffs__option-value slider__item"><span class="tariffs__option-name-value">Смайлики</span></td>
-          </tr>
-          <tr class="tariffs__options">
-            <th class="tariffs__options-name">Комментарии</th>
-            <td class="tariffs__option-value slider__item"><span class="tariffs__option-name-value">Комментарии</span></td>
-          </tr>
-        </table>
-        <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle slider__toggle--current" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
-      </section>
-      <section class="feedback">
-        <h2 class="feedback__title">Остались вопросы?<br>
-          Свяжитесь с нами!</h2>
-        <div class="feedback__wrapper">
-          <div class="feedback__item">
-            <b class="feebback__item-title">Звоните:</b>
-            <a class="feedback-link" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
+          <div class="post__buttons">
+            <button class="button" type="submit">Запостить</button>
+            <button class="button" type="reset">Отмена</button>
           </div>
-          <div class="feedback__item">
-            <b class="feebback__item-title"></b>
-            <a class="feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-          <div class="feedback__item">
-            <b class="feebback__item-title"></b>
-            <a class="feedback-link" href="#"><address>ул. Большая Конюшенная, 19/8</address></a>
-          </div>
-        </div>
-        <p class="map">
-          <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ea038e7e822fba73f59622ea253795b394dcb60eb07fffd5b6014ac2ae75be0&amp;width=320&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
-        </p>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
