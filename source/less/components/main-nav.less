@@ -3,6 +3,16 @@
   padding: 0;
 
   list-style-type: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+
+    width: 720px;
+  }
+}
+
+.main-nav__item {
+  text-align: center;
 }
 
 .main-nav__link {
@@ -10,7 +20,12 @@
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.main-nav__toggle {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
