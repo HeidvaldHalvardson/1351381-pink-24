@@ -2,11 +2,36 @@
   background-color: #ffffff;
 }
 
+.feedback__wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 250px 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 250px 250px 250px;
+  }
+}
+
 .feedback__title {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
+}
+
+.feedback__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback__item--grid {
+  @media (min-width: @tablet-width) {
+    @media (max-width: @desktop-width) {
+      grid-column: ~"1 / -1";
+    }
+  }
 }
 
 .feedback__item-title {
