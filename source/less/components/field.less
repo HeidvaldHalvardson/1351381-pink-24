@@ -1,0 +1,37 @@
+.field {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.field--contacts {
+  @media (min-width: @tablet-width) {
+    flex-direction: column-reverse;
+  }
+}
+
+.field--emotion {
+  flex-direction: column;
+}
+
+.field__label {
+  line-height: 30px;
+  color: #d22856;
+}
+
+.field__input {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.field__input::placeholder {
+  color: #283645;
+}
+
+.field__input--textarea {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
