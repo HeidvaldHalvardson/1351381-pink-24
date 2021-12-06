@@ -7,11 +7,109 @@
   margin-bottom: 55px;
 }
 
+.contest__form {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.contest__user {
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 440px;
+  }
+}
+
+.contest__journey {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    order: 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.contest__label {
+  @media (min-width: @desktop-width) {
+    width: 300px;
+  }
+}
+
+.contest__feedback {
+  @media (min-width: @tablet-width) {
+    order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+
+    display: flex;
+  }
+}
+
+.contest__system {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 440px;
+    margin-left: auto;
+  }
+}
+
+.contest__emotion {
+  @media (min-width: @tablet-width) {
+    order: 5;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
 .contest__legend {
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: #d22856;
+}
+
+.contest__wrapper-button {
+  order: 6;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
 }
 
 .contest__button {
