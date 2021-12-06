@@ -4,6 +4,36 @@
   text-align: center;
 }
 
+.post__form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.post__control-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.post__range {
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.post__buttons {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
 .post__button {
   font-weight: 700;
   font-size: 18px;

@@ -10,7 +10,7 @@
     <header class="page-header page-header--inset">
       <div class="header-wrapper">
         <div class="container">
-          <a class="page-header__logo" href="#" aria-label="Логотип Pink.">
+          <a class="page-header__logo" href="index.html" aria-label="Логотип Pink.">
             <svg width="74" height="23" viewBox="0 0 74 23" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg">
               <path d="M0.00496827 1.54857C0.00487772 1.21254 0.135804 0.889818 0.369742 0.649431C0.60368 0.409043 0.922049 0.27008 1.25676 0.262266H8.39001C13.4469 0.262266 16.7751 2.9645 16.7751 7.39179V7.45162C16.7751 12.2977 12.7415 14.8105 7.97274 14.8105H2.53836V21.611C2.55394 21.7874 2.53277 21.9651 2.47619 22.1329C2.41961 22.3006 2.32887 22.4547 2.20973 22.5854C2.09058 22.716 1.94565 22.8204 1.78416 22.8918C1.62266 22.9631 1.44812 23 1.27166 23C1.0952 23 0.920671 22.9631 0.759173 22.8918C0.597674 22.8204 0.452744 22.716 0.333602 22.5854C0.21446 22.4547 0.123708 22.3006 0.0671295 22.1329C0.0105515 21.9651 -0.0106138 21.7874 0.00496827 21.611V1.54857ZM8.07209 12.5171C11.7778 12.5171 14.2119 10.5228 14.2119 7.53139V7.47156C14.2119 4.26078 11.8175 2.59556 8.25092 2.59556H2.58804V12.4772L8.07209 12.5171Z"/>
               <path d="M21.5935 1.38904C21.5779 1.21262 21.5991 1.03487 21.6556 0.867114C21.7122 0.699353 21.803 0.545245 21.9221 0.414596C22.0412 0.283947 22.1862 0.179616 22.3477 0.108238C22.5092 0.0368607 22.6837 0 22.8602 0C23.0366 0 23.2112 0.0368607 23.3727 0.108238C23.5342 0.179616 23.6791 0.283947 23.7982 0.414596C23.9174 0.545245 24.0081 0.699353 24.0647 0.867114C24.1213 1.03487 24.1425 1.21262 24.1269 1.38904V21.611C24.1425 21.7874 24.1213 21.9651 24.0647 22.1329C24.0081 22.3006 23.9174 22.4548 23.7982 22.5854C23.6791 22.7161 23.5342 22.8204 23.3727 22.8918C23.2112 22.9631 23.0366 23 22.8602 23C22.6837 23 22.5092 22.9631 22.3477 22.8918C22.1862 22.8204 22.0412 22.7161 21.9221 22.5854C21.803 22.4548 21.7122 22.3006 21.6556 22.1329C21.5991 21.9651 21.5779 21.7874 21.5935 21.611V1.38904Z"/>
@@ -22,13 +22,13 @@
             <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню навигации</span></button>
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#">Главная</a>
+                <a class="main-nav__link" href="index.html">Главная</a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="catalog.html">Фотографии</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Конкурс</a>
+                <a class="main-nav__link" href="#">Конкурс</a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="#">Html Academy</a>
@@ -46,12 +46,18 @@
         <h2 class="contest__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
         <form class="contest__form" action="https://echo.htmlacademy.ru">
           <fieldset class="contest__user">
-            <label class="field-label" for="user-last-name">ФАМИЛИЯ:</label>
-            <input class="field-input" name="user-last-name" id="user-last-name" type="text" placeholder="Укажите фамилию *" required>
-            <label class="field-label" for="user-first-name">ИМЯ:</label>
-            <input class="field-input" name="user-first-name" id="user-first-name" type="text" placeholder="Введите ваше имя *" required>
-            <label class="field-label" for="user-patronym">ОТЧЕСТВО:</label>
-            <input class="field-input" name="user-patronym" id="user-patronym" type="text" placeholder="Ну и отчество тоже">
+            <div class="field">
+              <label class="field__label" for="user-last-name">ФАМИЛИЯ:</label>
+              <input class="field__input" name="user-last-name" id="user-last-name" type="text" placeholder="Укажите фамилию *" required>
+            </div>
+            <div class="field">
+              <label class="field__label" for="user-first-name">ИМЯ:</label>
+              <input class="field__input" name="user-first-name" id="user-first-name" type="text" placeholder="Введите ваше имя *" required>
+            </div>
+            <div class="field">
+              <label class="field__label" for="user-patronym">ОТЧЕСТВО:</label>
+              <input class="field__input" name="user-patronym" id="user-patronym" type="text" placeholder="Ну и отчество тоже">
+            </div>
           </fieldset>
           <fieldset class="contest__journey">
             <legend class="contest__legend">Ваши безбашенные достижения в путешествии</legend>
@@ -87,10 +93,15 @@
             </label>
           </fieldset>
           <fieldset class="contest__feedback">
-            <label class="field-label" for="phone">НОМЕР ТЕЛЕФОНА</label>
-            <input class="field-input" name="phone" id="phone" type="tel" placeholder="Номер, пожалуйста">
-            <label class="field-label" for="email">АДРЕС ПОЧТЫ</label>
-            <input class="field-input" name="email" id="email" type="email" placeholder="Введите почту *">
+            <legend class="contest__legend contest__legend--contacts">контактная информация</legend>
+            <div class="field field--contacts">
+              <label class="field__label" for="phone">НОМЕР ТЕЛЕФОНА</label>
+              <input class="field__input" name="phone" id="phone" type="tel" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="field field--contacts">
+              <label class="field__label" for="email">АДРЕС ПОЧТЫ</label>
+              <input class="field__input" name="email" id="email" type="email" placeholder="Введите почту *">
+            </div>
           </fieldset>
           <fieldset class="contest__system">
             <legend class="contest__legend">С каким приложением путешествовали?</legend>
@@ -111,8 +122,10 @@
             </label>
           </fieldset>
           <fieldset class="contest__emotion">
-            <label class="field-label field-label--textarea" for="emotion">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
-            <textarea class="field-input field-input--textarea" name="emotion" id="emotion" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+            <div class="field">
+              <label class="field__label field__label--textarea" for="emotion">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
+              <textarea class="field__input field__input--textarea" name="emotion" id="emotion" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+            </div>
           </fieldset>
           <button class="contest__button" type="submit">Отправить форму</button>
           <p class="contest__requared"><b class="contest__requared-mark">*</b> — обязательные поля</p>
