@@ -2,14 +2,80 @@
   @media (max-width: @mobile-width-only) {
     display: none;
   }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+  }
+}
+
+.research__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
+.research__title,
+.research__text,
+.research__link {
+  @media (min-width: @tablet-width) {
+    width: 310px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
 }
 
 .research__title {
   font-size: 30px;
   line-height: 36px;
   color: #000000;
+
+  margin-top: 102px;
+  margin-bottom: 24px;
+
+  @media (min-width: @desktop-width) {
+    line-height: 30px;
+
+    margin-bottom: 37px;
+  }
+}
+
+.research__text {
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+
+    margin-bottom: 47px;
+  }
+}
+
+.research__title br {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .research__link {
+  display: block;
   color: #d22856;
+  margin-bottom: 138px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+
+    margin-bottom: 120px;
+  }
 }

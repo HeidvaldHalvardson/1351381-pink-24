@@ -1,7 +1,9 @@
+.suggests {
+  background-color: #f2f2f2;
+}
+
 .suggests__head-titles {
   background-color: #ffffff;
-
-  margin-bottom: 88px;
 }
 
 .suggests__head-title {
@@ -10,13 +12,39 @@
   line-height: 29px;
   text-align: center;
 
-  margin-top: 0;
+  margin: 0 auto;
   margin-bottom: 35px;
+  width: 220px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 54px;
+
+    margin-bottom: 0;
+    width: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
-
 .suggests__wrapper {
-  background-color: #f2f2f2;
+  padding-top: 88px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 25px;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 260px;
+    width: 940px;
+  }
 }
 
 .suggests__list {
@@ -31,10 +59,26 @@
 }
 
 .suggests__item {
-  margin-bottom: 43px;
+  padding-bottom: 43px;
 
   &:last-child {
-    margin-bottom: 325px;
+    padding-bottom: 325px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 310px;
+    padding-bottom: 46px;
+    margin-left: auto;
+
+    &:last-child {
+      padding-bottom: 49px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 59px;
+    width: 252px;
+    margin: 0 auto;
   }
 }
 
@@ -46,9 +90,29 @@
 
   margin-top: 0;
   margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
 .suggests__desc {
   text-align: center;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
