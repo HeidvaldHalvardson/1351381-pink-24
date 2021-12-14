@@ -1,15 +1,27 @@
 .feedback {
   background-color: #ffffff;
-}
 
-.feedback__wrapper {
+  margin: 0 auto;
+
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 250px 250px;
+    width: 620px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 250px 250px 250px;
+    width: 940px;
+  }
+}
+
+.feedback__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 310px);
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, 313px);
   }
 }
 
@@ -18,12 +30,50 @@
   font-size: 24px;
   line-height: 29px;
   text-align: center;
+
+  margin-bottom: 45px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 54px;
+
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+
+    margin-bottom: 60px;
+  }
 }
 
 .feedback__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55px;
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+  }
 }
 
 .feedback__item--grid {
@@ -39,6 +89,14 @@
   font-size: 18px;
   line-height: 25px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .feedback__link {
