@@ -1,3 +1,16 @@
+.post {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
 .post__title {
   line-height: 30px;
   font-weight: 400;
@@ -7,6 +20,9 @@
 .post__form {
   @media (min-width: @tablet-width) {
     display: flex;
+    justify-content: space-between;
+
+    margin-top: 57px;
   }
 }
 
@@ -14,6 +30,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+    width: 300px;
   }
 }
 
@@ -22,12 +39,83 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
+    margin-top: 9px;
+    margin-bottom: 67px;
   }
+}
+
+.post__button--submit {
+  color: #d22856;
+}
+
+.post__button--reset {
+  opacity: 0.1;
+}
+
+.post__toggle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 18px;
+  border-bottom: 1px solid fade(#283645, 10%);
+}
+
+.post__toggle-type--crop {
+  margin-right: 29px;
+  margin-bottom: 24px;
+}
+
+.post__toggle-type--fill {
+  margin-right: 28px;
+  margin-top: 27px;
+  margin-bottom: 23px;
+}
+
+.post__toggle-type--contrast {
+  margin-right: 32px;
+  margin-top: 26px;
+  margin-bottom: 27px;
+}
+
+.post__toggle-line {
+  width: 202px;
+  height: 2px;
+  background-color: #283645;
+
+  position: relative;
+}
+
+.post__toggle-button {
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid #d22856;
+
+  position: absolute;
+  top: -6px;
+}
+
+.post__toggle-button--crop {
+  left: 160px;
+}
+
+.post__toggle-button--fill {
+  left: 25px;
+}
+
+.post__toggle-button--contrast {
+  left: 96px;
 }
 
 .post__buttons {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+    margin-left: 27px;
+  }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
@@ -38,12 +126,9 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
-}
 
-.post__button--submit {
-  color: #d22856;
-}
-
-.post__button--reset {
-  opacity: 0.1;
+  height: 55px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 3px solid #d22856;
 }

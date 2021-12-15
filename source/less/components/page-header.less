@@ -27,9 +27,16 @@
   background-image: url("../img/bg-inset-mobile.jpg");
 
   margin-bottom: 54px;
-  padding-bottom: 51px;
+  min-height: 237px;
 
-  height: 237px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 100px;
+    min-height: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 394px;
+  }
 }
 
 .page-header__logo {
