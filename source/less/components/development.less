@@ -1,7 +1,7 @@
 .development {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 40px;
+  }
 }
 
 .development__text {
@@ -15,5 +15,18 @@
 }
 
 .development__link {
+  display: flex;
+  align-items: center;
   line-height: 0;
+  text-decoration: none;
+  color: #283645;
+  fill: #d22856;
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: fade(#283645, 30%);
+  }
 }
