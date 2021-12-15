@@ -7,11 +7,20 @@
 
 .page-header--index {
   background-image: url("../img/bg-index-mobile.jpg");
+  background-repeat: no-repeat;
 
   margin-bottom: 46px;
   padding-bottom: 38px;
 
-  height: 733px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 58px;
+    padding-bottom: 119px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 77px;
+    padding-bottom: 130px;
+  }
 }
 
 .page-header--inset {
@@ -25,4 +34,13 @@
 
 .page-header__logo {
   fill: #ffffff;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
 }
