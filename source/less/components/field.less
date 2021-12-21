@@ -7,25 +7,76 @@
   }
 }
 
-.field--contacts {
-  @media (min-width: @tablet-width) {
-    flex-direction: column-reverse;
-  }
-}
+.field__input {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+  padding: 12px 20px;
+  margin-bottom: 15px;
 
-.field--emotion {
-  flex-direction: column;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .field__label {
   line-height: 30px;
   color: #d22856;
+  padding-left: 23px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    padding-right: 20px;
+  }
 }
 
-.field__input {
-  font-size: 18px;
-  line-height: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
+.field--user {
+  @media (min-width: @tablet-width) {
+    align-items: center;
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 58px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.field__input--user {
+  flex-grow: 1;
+}
+
+.field--feedback {
+  @media (min-width: @tablet-width) {
+    flex-direction: column-reverse;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 375px;
+  }
+}
+
+.field--feedback .field__label {
+  @media (min-width: @tablet-width) {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+}
+
+.field--feedback .field__input {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 22px;
+    margin-top: 41px;
+  }
+}
+
+.field--emotion {
+  flex-direction: column;
 }
 
 .field__input::placeholder {
@@ -34,4 +85,14 @@
 
 .field__input--textarea {
   font-family: "Open Sans", "Arial", sans-serif;
+
+  height: 200px;
+
+  @media (min-width: @tablet-width) {
+    height: 190px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 125px;
+  }
 }
