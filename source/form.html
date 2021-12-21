@@ -66,7 +66,7 @@
         });
       </script>
       <div class="page-title">
-        <h1 class="page-title__inset-page">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="page-title__inset-page">Конкурс на самое безбашенное<br>путешествие с Пинк</h1>
       </div>
     </header>
     <main class="page-form sticky-footer">
@@ -74,76 +74,76 @@
         <h2 class="contest__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
         <form class="contest__form" action="https://echo.htmlacademy.ru">
           <fieldset class="contest__user">
-            <div class="field">
-              <label class="field__label" for="user-last-name">ФАМИЛИЯ:</label>
-              <input class="field__input" name="user-last-name" id="user-last-name" type="text" placeholder="Укажите фамилию *" required>
+            <div class="field field--user">
+              <label class="field__label field__label--user" for="user-last-name">ФАМИЛИЯ:</label>
+              <input class="field__input field__input--user" name="user-last-name" id="user-last-name" type="text" placeholder="Укажите фамилию *" required>
             </div>
-            <div class="field">
-              <label class="field__label" for="user-first-name">ИМЯ:</label>
-              <input class="field__input" name="user-first-name" id="user-first-name" type="text" placeholder="Введите ваше имя *" required>
+            <div class="field field--user">
+              <label class="field__label field__label--user" for="user-first-name">ИМЯ:</label>
+              <input class="field__input field__input--user" name="user-first-name" id="user-first-name" type="text" placeholder="Введите ваше имя *" required>
             </div>
-            <div class="field">
-              <label class="field__label" for="user-patronym">ОТЧЕСТВО:</label>
-              <input class="field__input" name="user-patronym" id="user-patronym" type="text" placeholder="Ну и отчество тоже">
+            <div class="field field--user">
+              <label class="field__label field__label--user" for="user-patronym">ОТЧЕСТВО:</label>
+              <input class="field__input field__input--user" name="user-patronym" id="user-patronym" type="text" placeholder="Ну и отчество тоже">
             </div>
           </fieldset>
           <fieldset class="contest__journey">
-            <legend class="contest__legend">Ваши безбашенные достижения в путешествии</legend>
-            <label class="contest__label control">
+            <span class="contest__legend contest__legend--journey">Ваши безбашенные достижения в путешествии</span>
+            <label class="contest__label contest__label--journey control control--user">
               <input class="visually-hidden" name="crazy-journey" value="selfie-with-shark" type="checkbox" checked>
               <span class="contol__mark"></span>
               <span class="control__style-text">Сделал селфи с акулой</span>
             </label>
-            <label class="contest__label control">
+            <label class="contest__label contest__label--journey control control--user">
               <input class="visually-hidden" name="crazy-journey" value="burned-on-the-beach" type="checkbox" checked>
               <span class="contol__mark"></span>
               <span class="control__style-text">Обгорел на пляже</span>
             </label>
-            <label class="contest__label control">
+            <label class="contest__label contest__label--journey control control--user">
               <input class="visually-hidden" name="crazy-journey" value="seen-chuck-norris" type="checkbox">
               <span class="contol__mark"></span>
               <span class="control__style-text">Видел Чака Норриса</span>
             </label>
-            <label class="contest__label control">
+            <label class="contest__label contest__label--journey control control--user">
               <input class="visually-hidden" name="crazy-journey" value="buy-souvenir" type="checkbox">
               <span class="contol__mark"></span>
               <span class="control__style-text">Накупил сувениров</span>
             </label>
-            <label class="contest__label control">
+            <label class="contest__label contest__label--journey control control--user">
               <input class="visually-hidden" name="crazy-journey" value="held-the-tower" type="checkbox" checked>
               <span class="contol__mark"></span>
               <span class="control__style-text">Удержал башню</span>
             </label>
-            <label class="contest__label control">
+            <label class="contest__label contest__label--journey control control--user">
               <input class="visually-hidden" name="crazy-journey" value="broke-the-hotel" type="checkbox">
               <span class="contol__mark"></span>
               <span class="control__style-text">Разгромил отель</span>
             </label>
           </fieldset>
           <fieldset class="contest__feedback">
-            <legend class="contest__legend contest__legend--contacts">контактная информация</legend>
-            <div class="field field--contacts">
+            <span class="contest__legend contest__legend--feedback">Контактная информация</span>
+            <div class="field field--feedback">
               <label class="field__label" for="phone">НОМЕР ТЕЛЕФОНА</label>
               <input class="field__input" name="phone" id="phone" type="tel" placeholder="Номер, пожалуйста">
             </div>
-            <div class="field field--contacts">
+            <div class="field field--feedback">
               <label class="field__label" for="email">АДРЕС ПОЧТЫ</label>
               <input class="field__input" name="email" id="email" type="email" placeholder="Введите почту *">
             </div>
           </fieldset>
           <fieldset class="contest__system">
-            <legend class="contest__legend">С каким приложением путешествовали?</legend>
-            <label class="contest__label control">
+            <span class="contest__legend contest__legend--system">С каким приложением путешествовали?</span>
+            <label class="contest__label contest__label--system control control--system">
               <input class="visually-hidden" name="system" value="IOS" type="radio" checked>
               <span class="contol__mark"></span>
               <span class="control__style-text">Pink для iOS</span>
             </label>
-            <label class="contest__label control">
+            <label class="contest__label contest__label--system control control--system">
               <input class="visually-hidden" name="system" value="Android" type="radio">
               <span class="contol__mark"></span>
               <span class="control__style-text">Pink на Android</span>
             </label>
-            <label class="contest__label control">
+            <label class="contest__label contest__label--system control control--system">
               <input class="visually-hidden" name="system" value="Windows" type="radio">
               <span class="contol__mark"></span>
               <span class="control__style-text">Windows Phone</span>
@@ -151,13 +151,13 @@
           </fieldset>
           <fieldset class="contest__emotion">
             <div class="field field--emotion">
-              <label class="field__label field__label--textarea" for="emotion">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
+              <label class="contest__legend contest__legend--emotion" for="emotion">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
               <textarea class="field__input field__input--textarea" name="emotion" id="emotion" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
             </div>
           </fieldset>
           <div class="contest__wrapper-button">
             <button class="contest__button" type="submit">Отправить форму</button>
-            <p class="contest__requared"><b class="contest__requared-mark">*</b> — обязательные поля</p>
+            <p class="contest__requared"><b class="contest__requared-mark">*</b> — обязательные <span class="contest__requared-hidden">для заполнения</span> поля</p>
           </div>
         </form>
       </section>
