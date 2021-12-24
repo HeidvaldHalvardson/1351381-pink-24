@@ -1,31 +1,54 @@
 .page-header {
   background-color: #1d2631;
   background-repeat: no-repeat;
+  background-image: url("../../img/bg-tablet.jpg");
+  background-size: auto 462px;
+  background-position: top center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/bg-tablet@2x.png");
+  }
+
+  @media (max-width: 320px) {
+    background-image: url("../../img/bg-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/bg-mobile@2x.jpg");
+    }
+  }
 
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    background-size: auto 729px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/bg-desktop.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/bg-desktop@2x.png");
+    }
+  }
 }
 
 .page-header--index {
-  background-image: url("../img/bg-index-mobile.jpg");
-  background-repeat: no-repeat;
-
   margin-bottom: 46px;
   padding-bottom: 38px;
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 0;
     margin-bottom: 58px;
-    padding-bottom: 119px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 77px;
-    padding-bottom: 130px;
+    padding-bottom: 0;
   }
 }
 
 .page-header--inset {
-  background-image: url("../img/bg-inset-mobile.jpg");
-
   margin-bottom: 54px;
   min-height: 237px;
 
@@ -36,6 +59,12 @@
 
   @media (min-width: @desktop-width) {
     min-height: 394px;
+    background-image: url("../../img/bg-desktop-inset.jpg");
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/bg-desktop-inset@2x.jpg");
+    }
   }
 }
 

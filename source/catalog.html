@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>Пинк: Фотографии</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png" >
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -75,7 +79,14 @@
         <div class="catalog__list-wrapper">
           <ul class="catalog__list">
             <li class="catalog__item catalog__item--panorama">
-              <img class="catalog__img" width="320" height="137" src="img/catalog-item/panorama-mobile.jpg" alt="">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-item/panorama-desktop.webp 1x, img/catalog-item/panorama-desktop@2x.webp 2x"> -->
+                <source type="image/jpeg" media="(min-width: 1200px)" srcset="img/catalog-item/panorama-desktop.jpg 1x, img/catalog-item/panorama-desktop@2x.jpg 2x">
+                <!-- <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog-item/panorama-tablet.webp 1x, img/catalog-item/panorama-tablet@2x.webp 2x"> -->
+                <source type="image/jpeg" media="(min-width: 660px)" srcset="img/catalog-item/panorama-tablet.jpg 1x, img/catalog-item/panorama-tablet@2x.jpg 2x">
+                <!-- <source type="image/webp" srcset="img/catalog-item/panorama-mobile.webp 1x, img/catalog-item/panorama-mobile@2x.webp 2x"> -->
+                <img class="catalog__img catalog__img--panorama" width="320" height="137" src="img/catalog-item/panorama-mobile.jpg" srcset="img/catalog-item/panorama-mobile@2x.jpg" alt="">
+              </picture>
               <div class="catalog__item-wrapper">
                 <div class="catalog__wrapper-author">
                   <cite class="catalog__autor">Анна</cite>
@@ -86,7 +97,11 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img class="catalog__img" width="280" height="180" src="img/catalog-item/photo-1-mobile.jpg" alt="">
+              <picture>
+                <source type="image/jpeg" media="(min-width: 1200px)" srcset="img/catalog-item/photo-1-desktop.jpg 1x, img/catalog-item/photo-1-desktop@2x.jpg 2x">
+                <source type="image/jpeg" media="(min-width: 660px)" srcset="img/catalog-item/photo-1-tablet.jpg 1x, img/catalog-item/photo-1-tablet@2x.jpg 2x">
+                <img class="catalog__img" width="280" height="180" src="img/catalog-item/photo-1-mobile.jpg" srcset="img/catalog-item/photo-1-mobile@2x.jpg" alt="">
+              </picture>
               <div class="catalog__item-wrapper">
                 <div class="catalog__wrapper-author">
                   <cite class="catalog__autor">Левон</cite>
@@ -97,7 +112,11 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img class="catalog__img" width="280" height="180" src="img/catalog-item/photo-2-mobile.jpg" alt="">
+              <picture>
+                <source type="image/jpeg" media="(min-width: 1200px)" srcset="img/catalog-item/photo-2-desktop.jpg 1x, img/catalog-item/photo-2-desktop@2x.jpg 2x">
+                <source type="image/jpeg" media="(min-width: 660px)" srcset="img/catalog-item/photo-2-tablet.jpg 1x, img/catalog-item/photo-2-tablet@2x.jpg 2x">
+                <img class="catalog__img" width="280" height="180" src="img/catalog-item/photo-2-mobile.jpg" srcset="img/catalog-item/photo-2-mobile@2x.jpg" alt="">
+              </picture>
               <div class="catalog__item-wrapper">
                 <div class="catalog__wrapper-author">
                   <cite class="catalog__autor">Антон</cite>
@@ -108,7 +127,11 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img class="catalog__img" width="280" height="180" src="img/catalog-item/photo-3-mobile.jpg" alt="">
+              <picture>
+                <source type="image/jpeg" media="(min-width: 1200px)" srcset="img/catalog-item/photo-3-desktop.jpg 1x, img/catalog-item/photo-3-desktop@2x.jpg 2x">
+                <source type="image/jpeg" media="(min-width: 660px)" srcset="img/catalog-item/photo-3-tablet.jpg 1x, img/catalog-item/photo-3-tablet@2x.jpg 2x">
+                <img class="catalog__img" width="280" height="180" src="img/catalog-item/photo-3-mobile.jpg" srcset="img/catalog-item/photo-3-mobile@2x.jpg" alt="">
+              </picture>
               <div class="catalog__item-wrapper">
                 <div class="catalog__wrapper-author">
                   <cite class="catalog__autor">Борис</cite>
@@ -119,7 +142,11 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img class="catalog__img" width="280" height="180" src="img/catalog-item/photo-4-mobile.jpg" alt="">
+              <picture>
+                <source type="image/jpeg" media="(min-width: 1200px)" srcset="img/catalog-item/photo-4-desktop.jpg 1x, img/catalog-item/photo-4-desktop@2x.jpg 2x">
+                <source type="image/jpeg" media="(min-width: 660px)" srcset="img/catalog-item/photo-4-tablet.jpg 1x, img/catalog-item/photo-4-tablet@2x.jpg 2x">
+                <img class="catalog__img" width="280" height="180" src="img/catalog-item/photo-4-mobile.jpg" srcset="img/catalog-item/photo-4-mobile@2x.jpg" alt="">
+              </picture>
               <div class="catalog__item-wrapper">
                 <div class="catalog__wrapper-author">
                   <cite class="catalog__autor">Сергей</cite>
@@ -130,7 +157,11 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img class="catalog__img" width="280" height="180" src="img/catalog-item/photo-5-mobile.jpg" alt="">
+              <picture>
+                <source type="image/jpeg" media="(min-width: 1200px)" srcset="img/catalog-item/photo-5-desktop.jpg 1x, img/catalog-item/photo-5-desktop@2x.jpg 2x">
+                <source type="image/jpeg" media="(min-width: 660px)" srcset="img/catalog-item/photo-5-tablet.jpg 1x, img/catalog-item/photo-5-tablet@2x.jpg 2x">
+                <img class="catalog__img" width="280" height="180" src="img/catalog-item/photo-5-mobile.jpg" srcset="img/catalog-item/photo-5-mobile@2x.jpg" alt="">
+              </picture>
               <div class="catalog__item-wrapper">
                 <div class="catalog__wrapper-author">
                   <cite class="catalog__autor">Максим</cite>
@@ -141,7 +172,11 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img class="catalog__img" width="280" height="180" src="img/catalog-item/photo-6-mobile.jpg" alt="">
+              <picture>
+                <source type="image/jpeg" media="(min-width: 1200px)" srcset="img/catalog-item/photo-6-desktop.jpg 1x, img/catalog-item/photo-6-desktop@2x.jpg 2x">
+                <source type="image/jpeg" media="(min-width: 660px)" srcset="img/catalog-item/photo-6-tablet.jpg 1x, img/catalog-item/photo-6-tablet@2x.jpg 2x">
+                <img class="catalog__img" width="280" height="180" src="img/catalog-item/photo-6-mobile.jpg" srcset="img/catalog-item/photo-6-mobile@2x.jpg" alt="">
+              </picture>
               <div class="catalog__item-wrapper">
                 <div class="catalog__wrapper-author">
                   <cite class="catalog__autor">Надежда</cite>
@@ -160,7 +195,10 @@
         <form class="post__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="post__download">
             <input class="visually-hidden" type="file">
-            <img src="img/catalog-item/photo-link-mobile.jpg" width="280" height="374" alt="Загрузить фото.">
+            <picture>
+              <source type="image/jpeg" media="(min-width: 660px)" srcset="img/catalog-item/photo-link-tablet.jpg 1x, img/catalog-item/photo-link-tablet@2x.jpg 2x">
+              <img class="post__photo-link" src="img/catalog-item/photo-link-mobile.jpg" srcset="img/catalog-item/photo-link-mobile@2x.jpg" width="280" height="374" alt="Загрузить фото.">
+            </picture>
           </label>
           <div class="post__control-wrapper">
             <div class="post__range">
