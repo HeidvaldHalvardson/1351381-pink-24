@@ -1,8 +1,81 @@
+.control {
+  position: relative;
+
+  &:hover .control__mark {
+    border-color: #283645;
+  }
+
+  &:active .control__mark,
+  &:focus-within .control__mark {
+    border-color: #d22856;
+  }
+}
+
 .control__style-text {
   font-size: 18px;
   line-height: 30px;
 }
 
+.control__mark {
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+
+  position: absolute;
+}
+
+.control__input[type="checkbox"] + .control__mark {
+  width: 31px;
+  height: 31px;
+  border-radius: 1px;
+
+  left: 0;
+  top: -2px;
+
+  @media (min-width: @tablet-width) {
+    left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 0;
+  }
+}
+
+.control__input[type="checkbox"]:checked + .control__mark {
+  background-image: url("../../img/checkbox-tick.svg");
+  background-repeat: no-repeat;
+  background-position: top 7px left 5px;
+}
+
+.control__input[type="radio"] + .control__mark {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+
+  left: 0;
+  top: -4px;
+
+  @media (min-width: @tablet-width) {
+    left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 74px;
+  }
+}
+
+.control__input[type="radio"]:checked + .control__mark::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #d22856;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 
 .control--user {
   padding-left: 60px;
@@ -14,6 +87,7 @@
   @media (min-width: @desktop-width) {
     width: 200px;
     padding-left: 57px;
+    margin-left: 40px;
   }
 }
 

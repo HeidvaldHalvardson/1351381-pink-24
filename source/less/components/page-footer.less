@@ -22,7 +22,32 @@
 }
 
 .page-footer__logo {
+  fill: #283645;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #283645;
+    opacity: 0.3;
+  }
+
   @media (max-width: @mobile-width-only) {
     margin-bottom: 41px;
+  }
+}
+
+.page-footer__logo-img--visible-mobile {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__logo-img--visible-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }

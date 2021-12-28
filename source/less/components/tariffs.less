@@ -1,5 +1,9 @@
 .tariffs {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
+  background-image: url("../../img/triangle-grey-bg.svg");
+  background-position: top -30px center;
+  background-repeat: no-repeat;
+
   position: relative;
   overflow: hidden;
   display: flex;
@@ -9,10 +13,19 @@
   @media (max-width: @mobile-width-only) {
     min-height: 380px;
   }
+
+  @media (min-width: @tablet-width) {
+    background-position: top -10px center;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: top 0 center;
+  }
 }
 
 .tariffs__table {
   width: 828px;
+  padding-top: 107px;
 
   @media (max-width: @mobile-width-only) {
     position: absolute;
@@ -25,6 +38,7 @@
     width: 620px;
     margin: 0 auto;
     margin-bottom: 70px;
+    padding-top: 100px;
   }
 
   @media (min-width: @desktop-width) {

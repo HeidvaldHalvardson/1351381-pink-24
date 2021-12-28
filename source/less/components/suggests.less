@@ -1,9 +1,17 @@
 .suggests {
-  background-color: #f2f2f2;
-}
-
-.suggests__head-titles {
   background-color: #ffffff;
+  background-image: url("../../img/triangle-grey-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top 180px center;
+  background-size: 1200px;
+
+  @media (min-width: @tablet-width) {
+    background-position: top 155px center;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: top 225px center;
+  }
 }
 
 .suggests__head-title {

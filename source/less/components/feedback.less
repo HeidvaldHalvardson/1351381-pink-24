@@ -2,6 +2,7 @@
   background-color: #ffffff;
 
   margin: 0 auto;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 620px;
@@ -106,4 +107,15 @@
   line-height: 33px;
   text-align: center;
   color: #d22856;
+
+  &:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  &:active {
+    text-decoration: none;
+    color: #283645;
+    opacity: 0.3;
+  }
 }
