@@ -1,5 +1,5 @@
 .downloads {
-  padding-top: 30px;
+  padding-top: 20px;
   background-image: url("../../img/bg-index-hand-mobile.png");
   background-repeat: no-repeat;
   background-position: top 107px center;
@@ -10,8 +10,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 114px;
-    padding-bottom: 85px;
+    padding-top: 95px;
+    padding-bottom: 114px;
     background-image: url("../../img/bg-index-hand-tablet.png");
     background-position: bottom center;
 
@@ -84,13 +84,25 @@
   text-align: center;
   color: #ffffff;
 
-  margin-top: 28px;
+  margin-top: 38px;
   margin-bottom: 32px;
-  padding: 21px 38px;
+  padding: 18px 38px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    color: fade(#d22856, 30%);
+  }
 
   @media (min-width: @tablet-width) {
-    margin-top: 39px;
+    margin-top: 29px;
     margin-bottom: 46px;
+    padding-left: 37px;
+    width: 300px;
   }
 
   @media (min-width: @desktop-width) {
@@ -100,7 +112,7 @@
 }
 
 .downloads__link-wrapper {
-  margin-bottom: 28px;
+  margin-bottom: 22px;
   margin-left: 38px;
   margin-right: 38px;
   display: flex;
@@ -108,7 +120,9 @@
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 38px;
+    margin-bottom: 32px;
+    margin-left: 46px;
+    margin-right: 48px;
   }
 
   @media (min-width: @desktop-width) {
@@ -124,24 +138,37 @@
   height: 56px;
 
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
 }
 
 .downloads__link--apple {
   background-image: url("../../img/apple-logo.svg");
+
+  @media (min-width: @tablet-width) {
+    height: 57px;
+  }
 }
 
 .downloads__link--android {
   background-image: url("../../img/android-logo.svg");
+
+  @media (min-width: @tablet-width) {
+    height: 48px;
+  }
 }
 
 .downloads__link--windows {
   background-image: url("../../img/microsoft-logo.svg");
+
+  @media (min-width: @tablet-width) {
+    height: 42px;
+  }
 }
 
 .downloads__legend {
   display: block;
   font-weight: 300;
+  font-size: 14px;
   text-align: center;
   color: #ffffff;
 

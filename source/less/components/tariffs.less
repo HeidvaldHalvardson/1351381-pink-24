@@ -1,7 +1,7 @@
 .tariffs {
   background-color: #ffffff;
   background-image: url("../../img/triangle-grey-bg.svg");
-  background-position: top -30px center;
+  background-position: top -40px center;
   background-repeat: no-repeat;
 
   position: relative;
@@ -15,7 +15,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    background-position: top -10px center;
+    background-position: top -20px center;
   }
 
   @media (min-width: @desktop-width) {
@@ -25,7 +25,7 @@
 
 .tariffs__table {
   width: 828px;
-  padding-top: 107px;
+  padding-top: 100px;
 
   @media (max-width: @mobile-width-only) {
     position: absolute;
@@ -59,8 +59,8 @@
   text-transform: uppercase;
   color: #ffffff;
 
-  margin-top: 19px;
-  margin-bottom: 15px;
+  margin-top: 11px;
+  margin-bottom: 0;
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
@@ -71,7 +71,7 @@
   display: block;
   font-weight: 300;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 25px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -91,12 +91,16 @@
   }
 }
 
+.tariffs__item-cell {
+  padding-bottom: 16px;
+}
+
 .tariffs__options {
   background-color: #ffffff;
 }
 
 .tariffs__option-value {
-  height: 59px;
+  height: 56px;
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
@@ -108,7 +112,7 @@
   background-image: url("../../img/table-yes.svg");
 
   @media (max-width: @mobile-width-only) {
-    background-position: top 19px right 27px;
+    background-position: top 17px right 16px;
   }
 }
 
@@ -116,7 +120,7 @@
   background-image: url("../../img/table-no.svg");
 
   @media (max-width: @mobile-width-only) {
-    background-position: top 16px right 32px;
+    background-position: top 16px right 18px;
   }
 }
 
@@ -131,7 +135,7 @@
 }
 
 .tariffs__option-name-value {
-  padding: 25px 0 25px 20px;
+  padding-left: 17px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -146,7 +150,7 @@
 }
 
 .tariffs__toggles {
-
+  padding-top: 426px;
   margin-bottom: 50px;
 
   @media (min-width: @tablet-width) {
