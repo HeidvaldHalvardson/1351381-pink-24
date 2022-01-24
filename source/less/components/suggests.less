@@ -10,7 +10,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-position: top 225px center;
+    background-position: top 260px center;
   }
 }
 
@@ -84,7 +84,9 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
+    justify-content: space-around;
     background-image: none;
+    padding-top: 60px;
   }
 }
 
@@ -102,10 +104,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 360px;
+    padding-top: 355px;
     padding-bottom: 59px;
     width: 252px;
-    margin: 0 auto;
+    margin: 0;
 
     background-repeat: no-repeat;
     background-position: top center;
@@ -126,6 +128,7 @@
 .suggests__item--world {
   @media (min-width: @desktop-width) {
     background-image: url("../../img/iphone-desktop-2.png");
+    margin: 0 25px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/iphone-desktop-2@2x.png");
@@ -162,6 +165,7 @@
     font-size: 30px;
     line-height: 30px;
     text-align: center;
+    margin-bottom: 25px;
   }
 }
 
@@ -177,5 +181,13 @@
     font-size: 18px;
     line-height: 30px;
     text-align: center;
+  }
+}
+
+.suggests__desc-br {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
   }
 }

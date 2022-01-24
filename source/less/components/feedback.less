@@ -18,11 +18,12 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 310px);
+    grid-template-columns: repeat(2, 300px);
+    column-gap: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: repeat(3, 313px);
+    grid-template-columns: repeat(3, 300px);
   }
 }
 
@@ -39,14 +40,16 @@
     font-size: 40px;
     line-height: 54px;
 
-    margin-bottom: 50px;
+    margin-bottom: 33px;
+    margin-top: 43px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 50px;
     line-height: 68px;
 
-    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: 40px;
   }
 }
 
@@ -58,7 +61,7 @@
   margin-bottom: 18px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 55px;
+    margin-bottom: 40px;
 
     &:last-child {
       margin-bottom: 30px;
@@ -80,7 +83,7 @@
 
 .feedback__item--grid {
   @media (min-width: @tablet-width) {
-    @media (max-width: @desktop-width) {
+    @media (max-width: 1199px) {
       grid-column: ~"1 / -1";
     }
   }
@@ -97,7 +100,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 }
 

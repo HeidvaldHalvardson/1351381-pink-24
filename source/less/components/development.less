@@ -2,6 +2,10 @@
   @media (max-width: @mobile-width-only) {
     margin-bottom: 40px;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+  }
 }
 
 .development__text {
@@ -28,5 +32,9 @@
 
   &:active {
     fill: fade(#283645, 30%);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 10px;
   }
 }
