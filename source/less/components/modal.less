@@ -28,7 +28,7 @@
 
 .modal__wrapper {
   background-color: #ffffff;
-  padding-top: 44px;
+  padding-top: 45px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -45,22 +45,23 @@
   @media (min-width: @desktop-width) {
     padding-left: 210px;
     padding-right: 210px;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
   }
 }
 
 .modal__success .modal__wrapper {
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 
   @media (min-width: @desktop-width) {
     padding-left: 160px;
     padding-right: 160px;
+    padding-bottom: 35px;
   }
 }
 
 .modal__title {
   margin-top: 0;
-  margin-bottom: 37px;
+  margin-bottom: 25px;
 
   font-size: 18px;
   line-height: 24px;
@@ -93,16 +94,25 @@
 
 .modal__error .modal__gray {
   background-color: #ffffff;
-  padding: 50px 20px;
+  padding: 40px 20px 75px;
+
+  @media (min-width: @tablet-width) {
+    padding: 30px 20px 55px;
+  }
 
   @media (min-width: @desktop-width) {
     background-color: #f2f2f2;
+    padding: 50px 20px;
   }
 }
 
 .modal__success .modal__gray {
   background-color: #f2f2f2;
-  padding: 50px 20px;
+  padding: 50px 20px 75px;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 20px;
+  }
 }
 
 .modal__button {
@@ -112,6 +122,12 @@
   margin-bottom: 0;
 
   @media (min-width: @tablet-width) {
-    width: 295px;
+    width: 300px;
+  }
+}
+
+.modal__button--success-desktop {
+  @media (min-width: @desktop-width) {
+    width: 460px;
   }
 }

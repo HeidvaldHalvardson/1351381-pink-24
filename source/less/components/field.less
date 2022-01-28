@@ -13,8 +13,10 @@
   font-family: "Open Sans", "Arial", sans-serif;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
-  padding: 12px 20px;
+  padding: 15px 20px;
   margin-bottom: 15px;
+  width: 280px;
+  box-sizing: border-box;
 
   &:hover {
     border-color: #283645;
@@ -35,21 +37,23 @@
   line-height: 30px;
   color: #d22856;
   padding-left: 23px;
+  margin-bottom: 5px;
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
     padding-right: 20px;
+    margin-bottom: 0;
   }
 }
 
 .field--user {
   @media (min-width: @tablet-width) {
     align-items: center;
-    margin-bottom: 56px;
+    margin-bottom: 51px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 58px;
+    margin-bottom: 52px;
 
     &:last-child {
       margin-bottom: 0;
@@ -63,22 +67,28 @@
 
 .field__input-wrapper--phone,
 .field__input-wrapper--email {
-  position: relative;
-  margin-bottom: 22px;
-  margin-top: 41px;
-  width: 375px;
+  @media (min-width: @tablet-width) {
+    position: relative;
+    margin-bottom: 8px;
+    margin-top: 30px;
+    width: 500px;
 
-  &::after {
-    content: "";
-    width: 54px;
-    height: 54px;
-    position: absolute;
-    right: 2px;
-    top: 2px;
-    background-color: #e5e5e5;
+    &::after {
+      content: "";
+      width: 64px;
+      height: 64px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: #e5e5e5;
 
-    background-repeat: no-repeat;
-    background-position: center;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 375px;
   }
 }
 
@@ -103,12 +113,16 @@
 .field--feedback .field__label {
   @media (min-width: @tablet-width) {
     padding-right: 0;
-    padding-left: 20px;
+    padding-left: 17px;
   }
 }
 
 .field--feedback .field__input {
   @media (min-width: @tablet-width) {
+    width: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
     width: 375px;
     box-sizing: border-box;
   }
@@ -136,6 +150,7 @@
 
   @media (min-width: @tablet-width) {
     height: 190px;
+    width: 100%;
   }
 
   @media (min-width: @desktop-width) {

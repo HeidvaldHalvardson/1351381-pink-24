@@ -2,33 +2,42 @@
   margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 86px;
+    margin-bottom: 82px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 72px;
+    margin-bottom: 60px;
   }
 }
 
 .contest__title {
   font-weight: 400;
+  font-size: 14px;
   line-height: 30px;
   text-align: center;
 
   margin-top: 0;
-  margin-bottom: 55px;
+  margin-bottom: 35px;
   padding-left: 20px;
   padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     width: 490px;
     margin: 0 auto;
-    margin-bottom: 82px;
+    margin-bottom: 73px;
     padding: 0;
+    font-size: 18px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 95px;
+    width: 760px;
+    margin-bottom: 80px;
+  }
+}
+
+.contest__title--hidden {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }
 
@@ -62,16 +71,18 @@
   margin: 0;
   padding: 0 20px;
   border: none;
-  margin-bottom: 44px;
+  margin-bottom: 27px;
 
   @media (min-width: @tablet-width) {
     order: 1;
+    margin-bottom: 15px;
   }
 
   @media (min-width: @desktop-width) {
     width: 435px;
     margin-right: 70px;
     padding: 0;
+    margin-top: 5px;
     margin-bottom: 0;
   }
 }
@@ -81,7 +92,7 @@
   flex-direction: column;
   background-color: #f2f2f2;
   margin: 0;
-  padding: 42px 20px 55px;
+  padding: 40px 20px 49px;
   border: none;
 
   @media (min-width: @tablet-width) {
@@ -91,9 +102,9 @@
     border-radius: 1px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 70px;
-    padding-top: 65px;
-    padding-bottom: 66px;
+    margin-bottom: 65px;
+    padding-top: 57px;
+    padding-bottom: 53px;
 
     background-color: #ffffff;
 
@@ -101,19 +112,25 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 0;
+    width: 940px;
+    padding-left: 13px;
     padding-right: 0;
-    padding-bottom: 0;
+    padding-bottom: 8px;
     margin-left: 0;
     margin-right: 0;
   }
 }
 
+.contest__legend--br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .contest__legend--journey {
-  padding-bottom: 55px;
+  padding-bottom: 39px;
 
   @media (min-width: @tablet-width) {
     padding-left: 25px;
@@ -130,15 +147,21 @@
 }
 
 .contest__label--journey {
-  padding-bottom: 69px;
+  padding-bottom: 52px;
 
   &:last-child {
     padding-bottom: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    &:nth-child(odd) {
+      order: 2;
+    }
+  }
 }
 
 .contest__feedback {
-  margin: 42px 20px 44px;
+  margin: 32px 20px 27px;
   padding: 0;
   border: none;
 
@@ -147,8 +170,8 @@
 
     border: 2px solid #e5e5e5;
     border-radius: 1px;
-    margin: 0 20px 70px;
-    padding: 0 82px 37px;
+    margin: 0 20px 65px;
+    padding: 15px 60px 27px;
 
     position: relative;
   }
@@ -159,7 +182,7 @@
     justify-content: space-between;
     margin-left: 0;
     margin-right: 0;
-    padding: 44px 62px 23px;
+    padding: 11px 60px 15px;
   }
 }
 
@@ -186,7 +209,7 @@
   flex-direction: column;
   border: none;
   background-color: #f2f2f2;
-  padding: 42px 20px 52px;
+  padding: 40px 20px 47px;
   margin: 0;
 
   @media (min-width: @tablet-width) {
@@ -196,8 +219,8 @@
     border-radius: 1px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 70px;
-    padding-bottom: 66px;
+    margin-bottom: 65px;
+    padding: 55px 0 60px;
 
     background-color: #ffffff;
 
@@ -209,12 +232,12 @@
     margin-left: auto;
     margin-right: 0;
     box-sizing: border-box;
-    padding: 61px 0 66px;
+    padding: 61px 0 56px;
   }
 }
 
 .contest__legend--system {
-  padding-bottom: 52px;
+  padding-bottom: 37px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 0;
@@ -231,7 +254,7 @@
 }
 
 .contest__label--system {
-  padding-bottom: 60px;
+  padding-bottom: 45px;
 
   &:last-child {
     padding-bottom: 0;
@@ -240,7 +263,7 @@
 
 .contest__emotion {
   margin: 0 20px;
-  padding: 22px 2px 50px;
+  padding: 38px 2px 50px;
   border: none;
 
   @media (min-width: @tablet-width) {
@@ -250,7 +273,7 @@
     border-radius: 1px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
     padding: 47px 60px 53px;
 
     position: relative;
@@ -258,7 +281,7 @@
 
   @media (min-width: @desktop-width) {
     width: 100%;
-    padding: 45px 60px;
+    padding: 42px 60px 45px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -268,7 +291,7 @@
   display: block;
   margin: 0 auto;
   padding-left: 0;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 
   @media (min-width: @tablet-width) {
     padding-left: 25px;
@@ -279,7 +302,7 @@
     position: absolute;
     top: -15px;
     left: 50%;
-    margin-left: -122px;
+    margin-left: -117px;
   }
 }
 
@@ -287,6 +310,7 @@
   order: 6;
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 55px;
 
   @media (min-width: @tablet-width) {
     display: flex;
