@@ -120,8 +120,9 @@
   margin-bottom: 22px;
   margin-left: 38px;
   margin-right: 38px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 33px;
   align-items: center;
 
   @media (min-width: @tablet-width) {

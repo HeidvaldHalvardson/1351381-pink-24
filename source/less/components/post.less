@@ -362,7 +362,7 @@
   font-size: 18px;
   line-height: 18px;
 
-  height: 55px;
+  min-height: 55px;
   border-radius: 30px;
   background-color: transparent;
   border: 3px solid #d22856;
@@ -388,6 +388,10 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
   }
 }
 

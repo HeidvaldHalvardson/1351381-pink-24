@@ -49,6 +49,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
 
     position: relative;
 
@@ -73,12 +74,8 @@
   @media (min-width: @desktop-width) {
     box-shadow: none;
     padding: 0;
-    margin-right: 80px;
+    margin-left: 80px;
     background-color: transparent;
-
-    &:last-child {
-      margin-right: 0;
-    }
 
     &:active .main-nav__link {
       color: fade(#ffffff, 30%);

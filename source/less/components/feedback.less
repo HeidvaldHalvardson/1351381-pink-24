@@ -17,12 +17,14 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(2, 300px);
-    column-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   @media (min-width: @desktop-width) {
+    display: grid;
+    column-gap: 20px;
     grid-template-columns: repeat(3, 300px);
   }
 }
@@ -61,6 +63,8 @@
   margin-bottom: 18px;
 
   @media (min-width: @tablet-width) {
+    width: 240px;
+    margin: auto;
     margin-bottom: 40px;
 
     &:last-child {
@@ -82,10 +86,8 @@
 }
 
 .feedback__item--grid {
-  @media (min-width: @tablet-width) {
-    @media (max-width: 1199px) {
-      grid-column: ~"1 / -1";
-    }
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
   }
 }
 
