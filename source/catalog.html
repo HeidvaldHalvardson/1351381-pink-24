@@ -15,21 +15,21 @@
       <div class="main-nav">
         <div class="main-nav__container main-nav__container--closed main-nav__container--nojs">
           <a class="page-header__logo main-nav__logo" href="#" aria-label="Логотип Pink.">
-            <svg class="page-header__logo-img--visible-mobile" width="74" height="23" aria-hidden="true" focusable="false">
+            <svg class="page-header__logo-img page-header__logo-img--visible-mobile" width="74" height="23" aria-hidden="true" focusable="false">
               <use href="img/sprite.svg#header-logo-img-mobile"></use>
             </svg>
-            <svg class="page-header__logo-img--visible-tablet" width="145" height="40"  aria-hidden="true" focusable="false">
+            <svg class="page-header__logo-img page-header__logo-img--visible-tablet" width="145" height="40"  aria-hidden="true" focusable="false">
               <use href="img/sprite.svg#header-logo-img-tablet"></use>
             </svg>
-            <svg class="page-header__logo-img--visible-desktop" width="147" height="40" aria-hidden="true" focusable="false">
+            <svg class="page-header__logo-img page-header__logo-img--visible-desktop" width="147" height="40" aria-hidden="true" focusable="false">
               <use href="img/sprite.svg#header-logo-img-desktop"></use>
             </svg>
           </a>
           <nav class="main-nav__switch main-nav__switch--closed main-nav__switch--nojs">
-            <button class="main-nav__toggle" type="button">
+            <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
               <span class="visually-hidden">Открыть меню навигации</span>
             </button>
-            <ul class="main-nav__list">
+            <ul class="main-nav__list main-nav__list--nojs">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
               </li>
@@ -40,13 +40,12 @@
                 <a class="main-nav__link" href="form.html">Конкурс</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#"><span class="main-nav__link--uppercase">Html</span> Academy</a>
+                <a class="main-nav__link" href="#"><span class="main-nav__link-html main-nav__link-html--uppercase">Html</span> Academy</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
-      <script src="js/burger.js"></script>
       <div class="page-title">
         <h1 class="page-title__inset-page">Фотографии<br>пользователей</h1>
       </div>
@@ -259,10 +258,10 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="#" aria-label="Логотип Pink.">
-          <svg class="page-footer__logo-img--visible-mobile" aria-hidden="true" focusable="false" width="145" height="40">
+          <svg class="page-footer__logo-img page-footer__logo-img--visible-mobile" aria-hidden="true" focusable="false" width="145" height="40">
             <use href="img/sprite.svg#footer-logo-mobile"></use>
           </svg>
-          <svg class="page-footer__logo-img--visible-desktop" width="147" height="40" aria-hidden="true" focusable="false">
+          <svg class="page-footer__logo-img page-footer__logo-img--visible-desktop" width="147" height="40" aria-hidden="true" focusable="false">
             <use href="img/sprite.svg#footer-logo-desktop"></use>
           </svg>
         </a>
@@ -306,5 +305,6 @@
         </aside>
       </div>
     </footer>
+    <script src="js/burger.js"></script>
   </body>
 </html>

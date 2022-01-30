@@ -35,6 +35,10 @@
 
 .main-nav__container--nojs {
   background-color: #283645;
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+  }
 }
 
 .main-nav__list {
@@ -55,6 +59,10 @@
 
     width: 720px;
   }
+}
+
+.main-nav__list--nojs {
+  position: relative;
 }
 
 .main-nav__item {
@@ -116,7 +124,7 @@
   }
 }
 
-.main-nav__link--uppercase {
+.main-nav__link-html--uppercase {
   text-transform: uppercase;
 }
 
@@ -140,6 +148,10 @@
   @media (min-width: @desktop-width) {
     display: none;
   }
+}
+
+.main-nav__toggle--nojs {
+  display: none;
 }
 
 .main-nav__switch--closed .main-nav__toggle::after {
