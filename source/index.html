@@ -9,6 +9,12 @@
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png" >
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="/fonts/opensans.woff" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff" as="font">
+    <link rel="preload" href="/fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="/fonts/opensanslight.woff" as="font">
   </head>
   <body>
     <header class="page-header page-header--index">
@@ -209,7 +215,10 @@
         </div>
       </section>
       <section class="map">
-        <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac0ffef8097c93ca77fc78b767cad18bb3b704dfb66a3c5959971046ec29c7c9c&amp;source=constructor" width="100%" height="200px" frameborder="0"></iframe>
+        <div class="map__image map__image--nojs">
+          <span class="visually-hidden">Наш адрес - ул. Большая Конюшенная, 19/8</span>
+        </div>
+        <iframe class="map__frame map__frame--nojs" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac0ffef8097c93ca77fc78b767cad18bb3b704dfb66a3c5959971046ec29c7c9c&amp;source=constructor" width="100%" height="200px" frameborder="0"></iframe>
       </section>
     </main>
     <footer class="page-footer">
@@ -263,5 +272,6 @@
       </div>
     </footer>
     <script src="js/burger.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
