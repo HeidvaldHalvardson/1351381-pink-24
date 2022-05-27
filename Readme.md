@@ -1,4 +1,4 @@
-https://heidvaldhalvardson.github.io/1351381-gllacy-32/
+https://heidvaldhalvardson.github.io/1351381-pink-24/build/index.html
 
 # Личный проект «Пинк» 
 
