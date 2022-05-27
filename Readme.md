@@ -1,3 +1,5 @@
+https://heidvaldhalvardson.github.io/1351381-gllacy-32/
+
 # Личный проект «Пинк» 
 
 * Студент: [Влад Богодяж](https://up.htmlacademy.ru/adaptive/24/user/1351381).
